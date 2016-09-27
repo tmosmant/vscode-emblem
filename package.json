@@ -1,0 +1,30 @@
+{
+    "name": "vscode-emblem",
+    "displayName": "Emblem.js Syntax",
+    "description": "Syntax highlighting for Emblem.js",
+    "version": "1.0.0",
+    "publisher": "tmosmant",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/tmosmant/vscode-emblem"
+	},
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "emblem",
+            "aliases": ["Emblem", "emblem"],
+            "extensions": [".em",".embl",".emblem"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "emblem",
+            "scopeName": "source.emblem",
+            "path": "./syntaxes/emblem.tmLanguage"
+        }]
+    }
+}
